@@ -34,3 +34,8 @@ scales better. This would be because O(n) is considered less efficent
 than O(1). Although both functions use loops different pre built
 methods  can also have an affect on space/time complexity. 
 
+I think that doublerInsert is slower because of its use of unshift,
+aside from the different methods of push and unshift the functions 
+look to be the same. As we learned this week, when unshift is used
+all the current elements must be moved foward by on, verses push which
+just adds an item to the end of the array. 
