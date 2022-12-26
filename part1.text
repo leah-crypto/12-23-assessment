@@ -1,0 +1,36 @@
+const tinyArray = getSizedArray(10);
+const smallArray = getSizedArray(100);
+const mediumArray = getSizedArray(1000);
+const largeArray = getSizedArray(10000);
+const extraLargeArray = getSizedArray(100000);
+
+
+extraLongArray: 
+insert 920.7419 ms             Milliseconds
+append 6.6995 ms
+
+Results for the largeArray
+insert 9.7822 ms
+append 1.2112 ms
+
+Results for the mediumArray
+insert 583.2 μs                 Microseconds
+append 379.1 μs
+
+Results for the smallArray
+insert 342.7 μs
+append 257.4 μs
+
+Results for the tinyArray
+insert 311.5 μs
+append 241.5 μs
+
+
+
+I believe that doublerAppend is O(1) because it uses the push method.
+I think that doublerInsert is O(n) since the unshift method was used. 
+I think from my understanding that doublerAppend would be the function which 
+scales better. This would be because O(n) is considered less efficent 
+than O(1). Although both functions use loops different pre built
+methods  can also have an affect on space/time complexity. 
+
